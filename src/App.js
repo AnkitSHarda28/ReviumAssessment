@@ -1,22 +1,20 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home.js";
+import Contact from "./Pages/Contact.js";
+import About from "./Pages/About.js";
 
+//Component for rendering Navbar and Handling the routing tree
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="contact" element={<Contact />} />
+          <Route exact path="about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
