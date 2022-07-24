@@ -1,0 +1,67 @@
+.slider {
+  position: relative;
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100vh;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  z-index: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 3rem;
+  color: white;
+  z-index: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dots {
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  background-color: #eac96540;
+  border: 5px solid white;
+}
+.dots:hover {
+  background-color: #b18910;
+}
+
+.dotsChecked {
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  border: 5px solid #b18910;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  gap: 20px;
+}
+
+.sliderWrapper {
+  width: 100vw;
+}
