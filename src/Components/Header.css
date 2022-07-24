@@ -1,0 +1,48 @@
+.Navbar {
+  top: 0;
+  position: sticky;
+  padding: 16px 0;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 100%;
+}
+ul {
+  background-color: white;
+  list-style: none;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  transition: 100ms all;
+  text-decoration: none;
+  color: #b18910;
+  padding: 9px 24px;
+  border-radius: 999px;
+  font-size: 25px;
+}
+a.active {
+  background-color: #f7ce5440;
+}
+a:hover {
+  background-color: #f7ce5424;
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    gap: 20px;
+  }
+  a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  ul {
+    gap: 25px;
+  }
+  a {
+    font-size: 20px;
+  }
+}
